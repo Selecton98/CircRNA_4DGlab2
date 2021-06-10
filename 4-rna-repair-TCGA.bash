@@ -37,7 +37,7 @@ STAR \
 --twopassMode Basic
 
 #########################################
-nohup htseq-count \
+htseq-count \
 -f sam \
 -r pos \
 -s no \
@@ -46,7 +46,7 @@ nohup htseq-count \
 -i gene_id \
 -m intersection-nonempty \
 ${name}Aligned.out.sam \
-/together_sdb/zhoujiaqi/index/gencode.v22.annotation.gtf > ${name}.count 2> htseq.log &
+/together_sdb/zhoujiaqi/index/gencode.v22.annotation.gtf > ${name}.count 2> htseq.log
 
 cd ../
 
