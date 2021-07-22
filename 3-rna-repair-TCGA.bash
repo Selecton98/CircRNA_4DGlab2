@@ -1,6 +1,6 @@
 
 #!/bin/bash
-#env:RNAseq
+#env:HTSEQ
 names=`ls`
 for name in ${names[@]};
 do
